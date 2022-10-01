@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    width: 1140px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -127,3 +127,48 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+
+/* sito visto dal tablet */
+@media screen and (max-width: 768px){
+
+    body{
+        width: 768px;
+    }
+
+    .container{
+        width: 768px;
+    }
+
+    .row{
+        display: flex;
+    }
+
+}
+
+/* sito visto da un dispositivo mobile */
+@media screen and (max-width: 480px){
+    
+    body{
+        width: 480px;
+    }
+
+    .container{
+        width: 480px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 400px;
+        margin: auto;
+        padding-bottom: 50px; 
+    }
+
+    ul{
+        width: 400px;
+    }
+}
